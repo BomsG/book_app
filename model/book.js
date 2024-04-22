@@ -6,6 +6,7 @@ const bookSchema = new Schema({
   title: {
     type: String,
     required: true,
+    unique: [true, "Same title must not exist"],
   },
   year: {
     type: Number,

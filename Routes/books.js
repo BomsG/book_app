@@ -67,7 +67,7 @@ bookRouter.delete("/:id", (req, res) => {
     .findByIdAndDelete(id)
     .then(() => {
       res.status(200).send({
-        message: "book successfully updated",
+        message: "book successfully deleted",
         data: "",
       });
     })
